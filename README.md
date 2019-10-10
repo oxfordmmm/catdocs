@@ -18,4 +18,8 @@ pip3 install sphinx-rtd-theme
 cd docs
 make html
 ```
-## 4. Browse Html at docs/build/html/index.html
+## 4. Open html
+
+```bash
+firefox docs/build/html/index.html
+```
