@@ -37,18 +37,3 @@ CatTag
 
 CatTag is a web API that provides tagging features for runs and samples.
 
-
-CatLab
-------
-
-CatLab is a python application, which scans the data needed to be loaded to a database for further reporting.
-
-CatReport
----------
-
-CatReport is a web API that generates report and serves them.
-
-CatPersistence
---------------
-
-CatPersisence is a python application that synchronises different cloud instances data into a central place.
