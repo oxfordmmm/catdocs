@@ -1,5 +1,5 @@
 Configuration
--------------
+=============
 
 CatWeb Configuration Example
 ----------------------------
