@@ -5,22 +5,30 @@ Overview
 --------
 
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Pipeline                |     Description                        |       Repo                                        |      Author      |    
+| Pipeline                |     Species                            |       Features                                    |      Author      |
++=========================+========================================+===================================================+==================+
+| Catbug                  |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |  Denis Volk      |
+|                         |                                        |    - Clockwork (for TB)                           |                  |
+|                         |                                        |    - Compass (for NTM)                            |                  |
+|                         |                                        |    - Drug Resistance on Clockwork VCF             |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-|-Catbug                  |     Description                        |       Repo                                        |      Author      |
+| Clockwork VC            |    TB                                  |    Trim, Map, Samtools, Cortex, Minos             |   Martin Hunt    |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-|-Clockwork VC            |     Description                        |       Repo                                        |      Author      |
-|-Clockwork TB            |     Description                        |       Repo                                        |      Author      |
-|-Clockwork Combined      |     Description                        |       Repo                                        |      Author      |
+| Clockwork TB Only       |    TB                                  |    - Speciation (Kraken2 + Mykrobe)               |                  |
+|                         |                                        |    - Trim, Map, Samtools, Cortex, Minos           |    Denis Volk    |
+|                         |                                        |    - Drug Resistance                              |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-|-CompassCompact          |     Description                        |       Repo                                        |      Author      |
-|-CompassCompact Plus     |     Description                        |       Repo                                        |      Author      |
+| CompassCompact          |    TB + NTM                            |    BWA, Mpileup, AnnotVCF, Basecall               |    Yifei Xu      |
+|                         |                                        |                                                   |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| PHE Flu                 |     Description                        |       Repo                                        |      Author      |
+| CompassCompact Plus     |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |     Fan Yang     |
+|                         |                                        |    - BWA, Mpileup, AnnotVCF, Basecall             |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| APHA BTB                |     Description                        |       Repo                                        |      Author      |
+| PHE Flu                 |     Description                        |       Repo                                        |       Ulf        |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Bug Flow                |     Description                        |       Repo                                        |      Author      |
+| APHA BTB                |     Description                        |       Repo                                        |  Richard Ellis   |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Nano Virus Metagenomics |     Description                        |       Repo                                        |      Author      |
+| Bug Flow                |     Description                        |       Repo                                        |    David Eyre    |
++-------------------------+----------------------------------------+---------------------------------------------------+------------------+
+| Nano Virus Metagenomics |     Description                        |       Repo                                        |     Yifei Xu     |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
