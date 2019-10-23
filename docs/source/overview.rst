@@ -26,7 +26,7 @@ If the genomic data that the user wishes to analyze is hosted on the ENA, SP3 ca
 
 **From Other Source**
 
-If the genomic data that the user wishes to analyze is hosted on the ENA, SP3 can fetch it directly. The user goes to the Dataset page, clicks New Fetch, inputs the project accession and the samples to fetch and clicks New Fetch. The data is fetched from the ENA in the background and the progress can be monitored on the dataset page.
+Sequence files can be transferred to the cloud server, then SP3 can fetch it from a folder. The users goes to the Dataset page, clickes New Fetch, choose LOCAL as source, and provide the folder of the data. The data is fetched from the local folder, which takes a few seconds to be ready for analysis.
 
 Start a pipeline
 ----------------
