@@ -11,6 +11,7 @@ Welcome to Oxford SP3's documentation!
    :caption: Contents:
 
    overview
+   pipelines
    architecture
    design
    modules
