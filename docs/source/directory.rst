@@ -1,5 +1,5 @@
-Directory Structure
-===================
+Data Directory Structure
+========================
 
 Cats software
 -------------
