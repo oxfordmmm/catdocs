@@ -1,5 +1,5 @@
-Data Directory Structure
-========================
+Data Types
+==========
 
 Cats software
 -------------
@@ -31,21 +31,21 @@ Cats software
 Static Data
 -----------
 
-+-----------------------------------------+-------------------------+---------------+
-| directory/file                          | contents                | owner         |
-+=========================================+=========================+===============+
-| /data/images                            | container images        | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /data/pipelines                         | nextflow pipelines      | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /data/references                        | reference data          | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /data/reports/resistance/data           | resistance data         | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /data/fetch                             | fetch api data          | fetch api     |
-+-----------------------------------------+-------------------------+---------------+
-| /data/inputs                            | fetch api symlinks      | fetch api     |
-+-----------------------------------------+-------------------------+---------------+
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
+| directory/file                          | contents                | owner         |               Notes                                 |
++=========================================+=========================+===============+=====================================================+
+| /data/images                            | container images        | root          |One pipeline could have one or more container images |
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
+| /data/pipelines                         | nextflow pipelines      | root          |Pipeline software, source controlled in Git          |
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
+| /data/references                        | reference data          | root          |Genome references, Taxonomic classification databases|
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
+| /data/reports/resistance/data           | resistance data         | root          |Genbank file, resistance catalog etc.                |
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
+| /data/fetch                             | fetch api data          | fetch api     |Data fetched to Cloud from ENA                       |
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
+| /data/inputs                            | fetch api symlinks      | fetch api     |Data fetched to Cloud by SFTP                        |
++-----------------------------------------+-------------------------+---------------+-----------------------------------------------------+
 
 Dynamic Data
 ------------
@@ -100,3 +100,49 @@ Nginx Configuration
 +-----------------------------------------+-------------------------+---------------+
 | /etc/letsencrypt/ssl-dhparams.pem       | nginx ssl options       | root          |
 +-----------------------------------------+-------------------------+---------------+
+
+
+Clockwork Output Data
+---------------------
+
+.. image:: _static/cwoutput.png
+
+
+Clockwork Reporting Data
+-------------------------
+
++-------------------------+-------------------------+-----------------+
+| Process                 | Files                   | Notes           |
++=========================+=========================+=================+
+| Kraken2                 | ERR550931_kraken2.tab   | reported        |
++-------------------------+-------------------------+-----------------+
+| Mykrobe                 | mykrobe_output.json     | reported        |
++---------------------------------------------------+-----------------+
+| Reference               | reference_info.txt      | reported        |
++-------------------------+-------------------------+-----------------+
+| Samtool QC              | samtools_qc.stats       | reported        |
++---------------------------------------------------+-----------------+
+| Resistance              | final.vcf               | reported        |
++---------------------------------------------------+-----------------+
+| Relatedness             | final.fa                | not reporte     |
++---------------------------------------------------+-----------------+
+
+Data Storage
+------------
+
+**Ephemeral**
+
+Ephemeral data are available when the cloud instance is running and the run has not been deleted from the cloud instance, such as dynamic data, output data.
+
+**Short-term**
+
+Pipeline input data (fastq or bam) are available on Cloud for a short period of time, say 2 weeks to 2 months based on the capacity of the platform.
+Pipeline output data (e.g. Clockwork TB pipeline output) will be available for short-term, say 2 weeks to 2 months based on the capacity of the platform.
+
+**Persistent**
+
+Persistent data are needed to be available without cloud instance running, which should be stored in a dedicated storage, such as static data, audit trail data, reporting data.
+
+**Long-term**
+
+Persistent data can be available for long-term access based on cost of storage. 
