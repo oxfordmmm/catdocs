@@ -117,15 +117,14 @@ Clockwork Reporting Data
 | Kraken2                 | ERR550931_kraken2.tab   | reported        |
 +-------------------------+-------------------------+-----------------+
 | Mykrobe                 | mykrobe_output.json     | reported        |
-+---------------------------------------------------+-----------------+
++-------------------------+-------------------------+-----------------+
 | Reference               | reference_info.txt      | reported        |
 +-------------------------+-------------------------+-----------------+
 | Samtool QC              | samtools_qc.stats       | reported        |
-+---------------------------------------------------+-----------------+
++-------------------------+-------------------------+-----------------+
 | Resistance              | final.vcf               | reported        |
-+---------------------------------------------------+-----------------+
-| Relatedness             | final.fa                | not reporte     |
-+---------------------------------------------------+-----------------+
++-------------------------+-------------------------+-----------------+
+
 
 Data Storage
 ------------
@@ -137,6 +136,7 @@ Ephemeral data are available when the cloud instance is running and the run has 
 **Short-term**
 
 Pipeline input data (fastq or bam) are available on Cloud for a short period of time, say 2 weeks to 2 months based on the capacity of the platform.
+
 Pipeline output data (e.g. Clockwork TB pipeline output) will be available for short-term, say 2 weeks to 2 months based on the capacity of the platform.
 
 **Persistent**
@@ -145,4 +145,4 @@ Persistent data are needed to be available without cloud instance running, which
 
 **Long-term**
 
-Persistent data can be available for long-term access based on cost of storage. 
+Persistent data can be available for long-term access based on user wish and cost of storage. 
