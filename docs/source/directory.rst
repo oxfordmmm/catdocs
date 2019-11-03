@@ -68,8 +68,8 @@ Dynamic Data
 | /work/logs/catweb*                      | catweb logs             | catweb        |
 +-----------------------------------------+-------------------------+---------------+
 
-Audit Data
-----------
+Audit Trail Data
+----------------
 
 +----------------------+--------------------------+-----------+
 | directory/file       | contents                 | owner     |
