@@ -1,7 +1,11 @@
 Overview
 ========
 
-The Scalable Pathogen Pipeline Platform (SP3) is a solution developed by `Oxford MMM group <http://modmedmicro.nsms.ox.ac.uk/>`_ for pathogen genomic analysis in the cloud. SP3 provides an efficient and unified process of collecting, analysing and comparing genomic data analysis with the benefit of elastic cloud computing. SP3 enables container-centric bioinformatic workflows run on personal computers, High-performance computing (HPC) clusters and cloud platforms. We have deployed and tested SP3 on local HPC, Google Cloud Platform (GCP), Microsoft Azure and OpenStack Platforms. SP3 allows users to fetch genomic sequencing data from European Nucleotide Archive (ENA) and conduct analysis with open-source bioinformatic pipelines.
+The Scalable Pathogen Pipeline Platform (SP3) is a cloud solution for pathogen gemomic data analytics developed by `Oxford MMM group <http://modmedmicro.nsms.ox.ac.uk/>`_ for pathogen genomic analysis in the cloud. 
+
+SP3 provides an efficient and unified process of collecting, analysing and comparing genomic data analysis with the benefit of elastic cloud computing. SP3 enables container-centric bioinformatic workflows run on personal computers, High-performance computing (HPC) clusters and cloud platforms. 
+
+We have deployed and tested SP3 on local HPC, Google Cloud Platform (GCP), Microsoft Azure Cloud, Amazon Elastic Compute Cloud (Amazon EC2) and OpenStack Platforms. SP3 allows users to fetch genomic sequencing data from European Nucleotide Archive (ENA) or other ad-hoc sources and conduct analysis with open-source bioinformatic pipelines.
 
 .. image:: _static/architecture.png
 
