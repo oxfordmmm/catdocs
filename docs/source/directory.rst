@@ -80,36 +80,80 @@ Audit Trail Data
 +----------------------+--------------------------+-----------+
 | /db/fetch-api.sqlite | fetch queues and datasets| fetch-api |
 +----------------------+--------------------------+-----------+
-| /db/cattag.sqlite    | tags for runs and samples| cattag    |
-+----------------------+--------------------------+-----------+
 
 
-Nginx Configuration
--------------------
+**SP3 Nextflow run audit trail example - one run**
 
-+-----------------------------------------+-------------------------+---------------+
-| directory/file                          | contents                | owner         |
-+=========================================+=========================+===============+
-| /etc/nginx/sites-available/sp3          | sp3 nginx config        | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /etc/letsencrypt/domain.cert.pem        | domain cert             | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /etc/letsencrypt/domain.key.pem         | domain key              | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /etc/letsencrypt/options-ssl-nginx.conf | nginx ssl options       | root          |
-+-----------------------------------------+-------------------------+---------------+
-| /etc/letsencrypt/ssl-dhparams.pem       | nginx ssl options       | root          |
-+-----------------------------------------+-------------------------+---------------+
+.. code-block:: JSON
+
+    {
+    "run_uuid": "aab17656-bc1f-498f-a292-55ead738f798", 
+    "run_name": "nfNVM-20191106_210109_ignoreError", 
+    "context": "local", 
+    "reference_map": "{}", 
+    "user_param_dict":{
+        "--rawDataDir": "/data/inputs/local/5b1a38fe-dae1-4a18-bcee-d02c80d2cd83", 
+        "--readpat": "*.fastq.gz", 
+        "--Porechop": "false"}, 
+    "user_name": "fan@ndm.local", 
+    "indir": "/data/inputs/local/5b1a38fe-dae1-4a18-bcee-d02c80d2cd83", 
+    "readpat": "*.fastq.gz", 
+    "nfweb_git_version": "718231e", 
+    "flow_git_version": "32442cd"
+    }
 
 
-Clockwork Output Data
----------------------
+**SP3 online report audit trail example - one section of report**
+
+.. code-block:: JSON
+
+    {
+    "uuid" : "7b6da105-96a1-4f29-8b0e-d1e59f64a9f3",
+    "type" : "samtools_qc",
+    "status" : "done",
+    "added_epochtime" : "1571230370",
+    "started_epochtime" : "1571230371",
+    "finished_epochtime" : "1571230371",
+    "pipeline_run_uuid" : "e0c27438-5453-4af6-9b64-15470b2fafbc",
+    "sample_name" : "SRR3675209",
+    "sample_filepath" : "/work/output/e0c27438-5453-4af6-9b64-15470b2fafbc/SRR3675209/samtools_qc/samtools_qc.stats",
+    "report_filename" : "/work/reports/catreport/reports/7b6da105-96a1-4f29-8b0e-d1e59f64a9f3.json",
+    "software_versions" : {
+        "nfweb_git_version": "718231e", 
+        "flow_git_version": "g3541843"} 
+    }
+
+**Data fetch from ENA audit trail example - one ENA fetch**
+
+.. code-block:: JSON
+
+    {
+    "fetch_type": "all", 
+    "fetch_rerun": "false", 
+    "fetch_range": "", 
+    "bad_files": [], 
+    "ok_files_fastq_ftp": [
+        "ftp.sra.ebi.ac.uk/vol1/fastq/SRR367/005/SRR3675245/SRR3675245_1.fastq.gz", 
+        "ftp.sra.ebi.ac.uk/vol1/fastq/SRR367/005/SRR3675245/SRR3675245_2.fastq.gz"], 
+    "ok_files_fastq_md5": [
+        "8902e3eae2a5bb0006f8f36fe8117d21", 
+        "bd3635fb61800e6a9849bcef05fe12ef"], 
+    "ok_files_len": 2, 
+    "bad_files_len": 0, 
+    "failed_download_files": [], 
+    "ok_download_files": [
+        "ftp.sra.ebi.ac.uk/vol1/fastq/SRR367/005/SRR3675245/SRR3675245_1.fastq.gz", 
+        "ftp.sra.ebi.ac.uk/vol1/fastq/SRR367/005/SRR3675245/SRR3675245_2.fastq.gz"]
+    }
+
+Clockwork Pipeline Output Data
+------------------------------
 
 .. image:: _static/cwoutput.png
 
 
 Clockwork Reporting Data
--------------------------
+------------------------
 
 +-------------------------+-------------------------+-----------------+
 | Process                 | Files                   | Notes           |
