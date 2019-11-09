@@ -24,7 +24,7 @@ SP3 stands for Scalable Pathogen Pipleine Platform
    deployment
    configuration
    directory
-   deve
+   developer
    publication
    license
 
