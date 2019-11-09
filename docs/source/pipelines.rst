@@ -5,33 +5,32 @@ Overview
 --------
 
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Pipeline                |     Species                            |       Features                                    |      Author      |
+| Pipeline                |     Species                            |       Features and Repo                           |      Author      |
 +=========================+========================================+===================================================+==================+
-| Catbug                  |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |    Denis Volk    |
+| Oxford Catbug           |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |    Denis Volk    |
 |                         |                                        |    - Clockwork (for TB)                           |                  |
 |                         |                                        |    - Compass (for NTM)                            |                  |
 |                         |                                        |    - Drug Resistance on Clockwork VCF             |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Clockwork VC            |    TB                                  |    Trim, Map, Samtools, Cortex, Minos             |   Martin Hunt    |
+| Clockwork VC            |    TB                                  |    https://github.com/iqbal-lab-org/clockwork     |   Martin Hunt    |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
 | Clockwork TB Only       |    TB                                  |    - Speciation (Kraken2 + Mykrobe)               |                  |
-|                         |                                        |    - Trim, Map, Samtools, Cortex, Minos           |    Denis Volk    |
+|                         |                                        |    - Clockwork VC                                 |    Denis Volk    |
 |                         |                                        |    - Drug Resistance                              |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| CompassCompact          |    TB + NTM                            |    BWA, Mpileup, AnnotVCF, Basecall               |    Yifei & Fan   |
+| Oxford CompassCompact   |    TB + NTM                            |    https://github.com/oxfordmmm/CompassCompact    |    Yifei & Fan   |
 |                         |                                        |                                                   |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| CompassCompact Plus     |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |    Denis Volk    |
-|                         |                                        |    - BWA, Mpileup, AnnotVCF, Basecall             |                  |
+| Oxford CompassPlus      |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |    Denis & Fan   |
+|                         |                                        |    - CompassCompact                               |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| PHE Flu                 |     Description                        |       Repo                                        |    Ulf & Denis   |
+| PHE Flu                 |    Flu Virus                           |                                                   |    Ulf & Denis   |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| APHA BTB                |     Description                        |       Repo                                        |  Richard & Fan   |
+| APHA BTB                |    Bovine TB                           |   https://github.com/oxfordmmm/BovTB-nf-docker    |  Richard & Fan   |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Bug Flow                |     Description                        |       Repo                                        |    David Eyre    |
+| Oxford Bug Flow         |    Bacteria                            |   https://github.com/davideyre/bug-flow           |    David Eyre    |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Nano Virus Metagenomics |     Description                        |       Repo                                        |    Yifei & Fan   |
-+-------------------------+----------------------------------------+---------------------------------------------------+------------------+
+
 
 TB Pipleines
 ------------
