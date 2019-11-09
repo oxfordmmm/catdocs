@@ -10,7 +10,7 @@ SP3 stands for Scalable Pathogen Pipleine Platform
 - **Scalable**: SP3 uses elastic cloud computing to scale the compute nodes based on demands.
 - **Pathogen**: SP3 provides an efficient and unified process of collecting, analysing and comparing pathogen genomic data analysis.
 - **Pipeline**: SP3 supports bioinformatic pipelines that developed using Nextflow and containers.
-- **Platform**: SP3 has been deployed and tested on local PC, Slurm Cluster, Google Cloud Platform (GCP), Microsoft Azure and OpenStack Platforms.
+- **Platform**: SP3 has been deployed and tested on Google Cloud Platform (GCP), Microsoft Azure Cloud, Amazon Elastic Compute Cloud (Amazon EC2) and OpenStack Platforms. 
 
 .. toctree::
    :maxdepth: 3
@@ -24,7 +24,7 @@ SP3 stands for Scalable Pathogen Pipleine Platform
    deployment
    configuration
    directory
-   developer
+   deve
    publication
    license
 
