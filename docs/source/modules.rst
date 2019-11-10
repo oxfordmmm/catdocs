@@ -1,11 +1,13 @@
 Modules
 =======
 
-SP3 has taken a clear modular design approach. All modules are working togeter and illustrated in three layers, UI, APIs and Cloud.
+SP3 has taken a clear modular design approach. Each module has its single and independent responsibility, performing one aspect of the designed functionality. 
 
-Each module has its single and independent responsibility, performing one aspect of the designed functionality. CatWeb is a web user interface that calls all other web API modules for different functionalities. CatGrid and CatCloud provide a unified layer for cloud agnostic compute node scaling and job scheduling. 
+All modules are working together in three layers, UI, APIs and Cloud. All modules are written in Python3.6+ and prefix with Cat*, with a wish to be agile and flexible.
 
-All modules are written in Python3.6+ and prefix with Cat*, with a wish to be agile and flexible.
+.. image:: _static/modules.png
+
+CatWeb is a web user interface that calls web API modules for different functionalities. CatGrid and CatCloud provide a unified layer for cloud agnostic compute node scaling and job scheduling. 
 
 
 CatWeb UI
