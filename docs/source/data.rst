@@ -190,3 +190,13 @@ Persistent data are needed to be available without cloud instance running, which
 **Long-term**
 
 Persistent data can be available for long-term access based on user wish and cost of storage. 
+
+
+Persistence Storage
+-------------------
+
+.. image:: _static/persistence.png
+
+Each cloud instance has a instance configuration file containing its name, id and associated persistent store.
+
+Periodically cloud instances copy their databases, reports, output files to the persistent store.

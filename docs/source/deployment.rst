@@ -1,7 +1,12 @@
 Deployment
 ==========
 
-In a cloud infrasture,  a head node is needed to created with ubuntu 18.04. Then we connect to the head node to 
+Cloud Infrastructure
+--------------------
+
+.. image:: _static/cloud.png
+
+In a cloud infrasture,  a head node is needed with ubuntu 18.04. Then we connect to the head node to 
 
     1. Install Oxford Cats Software
     2. Start Oxford Cats Services
