@@ -59,7 +59,7 @@ CatGrid API
 
 Catgrid is a configurationless, agentless grid scheduler with a web api. It manages nodes and jobs. It accepts web API request for nodes adding, removing and jobs scheduling.
 
-CatGrid implements similar interface as Slurm cluster, such as sbatch, squeue and sbatch.
+CatGrid implements similar interface as Slurm cluster, such as sbatch, squeue and scancel.
 
 
 CatCloud
