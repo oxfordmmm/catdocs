@@ -23,9 +23,9 @@ Nextflow Checklist
 - Have a file **pattern** for the input files (e.g. --readpat)
 - Have different profiles for different enviornment in nextflow.config
 - Have output data explicitly in **output** channel, do not use \*.\*
-- Have **publishDir** in process that has the final output files
+- Have **publishDir** in process to explicitly claim final output files
 - Have **tag** to identify individual sample identifier
-- have memory usage set for process that has high memory usage, e.g. **memory '10 G'** for centrifuge
+- Have memory usage set for process that has high memory usage, e.g. **memory '10 G'** for centrifuge
 
 
 Nextflow Do NOT
@@ -36,7 +36,7 @@ Nextflow Do NOT
 - Do Not write to /tmp, use **scratch true** instead
 - Do Not write anywhere except nextflow work directory
 - Do Not change work directory
-- Do Not access files outside of channel
+- Do Not access files outside of channel except reference files
 - Do Not create files outside of channel
 - Do Not have a list of scripts in one process if they do not have to run together.
 
