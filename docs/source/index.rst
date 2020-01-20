@@ -5,7 +5,7 @@
 
 Welcome to Oxford SP3's documentation!
 ======================================
-SP3 stands for Scalable Pathogen Pipleine Platform
+SP3 stands for Scalable Pathogen Pipeline Platform
 
 - **Scalable**: SP3 uses elastic cloud computing to scale the compute nodes based on demands.
 - **Pathogen**: SP3 provides an efficient and unified process of collecting, analysing and comparing pathogen genomic data analysis.
