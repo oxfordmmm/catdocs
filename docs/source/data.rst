@@ -213,33 +213,3 @@ Clockwork Reporting Data
 +-------------------------+-------------------------+-----------------+
 
 
-Data Storage
-------------
-
-**Ephemeral**
-
-Ephemeral data are available when the cloud instance is running and the run has not been deleted from the cloud instance, such as dynamic data, output data.
-
-**Short-term**
-
-Pipeline input data (fastq or bam) are available on Cloud for a short period of time, say 2 weeks to 2 months based on the capacity of the platform.
-
-Pipeline output data (e.g. Clockwork TB pipeline output) will be available for short-term, say 2 weeks to 2 months based on the capacity of the platform.
-
-**Persistent**
-
-Persistent data are needed to be available without cloud instance running, which should be stored in a dedicated storage, such as static data, audit trail data, reporting data.
-
-**Long-term**
-
-Persistent data can be available for long-term access based on user wish and cost of storage. 
-
-
-Persistence Storage
--------------------
-
-.. image:: _static/persistence.png
-
-Each cloud instance has a instance configuration file containing its name, id and associated persistent store.
-
-Periodically cloud instances copy their databases, reports, output files to the persistent store.
