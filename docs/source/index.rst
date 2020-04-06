@@ -23,6 +23,7 @@ SP3 stands for Scalable Pathogen Pipeline Platform
    configuration
    pipelines
    data
+   user
    developer
    publication
    license
