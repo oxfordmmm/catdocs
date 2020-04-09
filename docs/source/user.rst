@@ -3,6 +3,21 @@ User Guide
 
 Welcome to use Oxford SP3. Please take a moment to view this user guide and consider the options available to you before you start.
 
+Register an account
+-------------------
+
+To register with SP3, please send an email to crookcs.it@ndm.ox.ac.uk with a subject as "**SP3 User Registration**" and provide following information: 
+
+* Your email
+* Your full name
+* Your organisation
+* Your group (if you know)
+* Your research summary related to SP3
+* How often do you expect to use SP3?
+* How many samples do you expect to submit to SP3?
+* Which way would you submit your data to SP3? (see below choice)
+* Any other information you like us to know.
+
 User, group and storage
 -----------------------
 To use Oxford SP3, a user needs to register an SP3 **account**. The account allows you to log into one of our SP3 cloud platforms for pathogen sequencing data analysis.
@@ -22,7 +37,7 @@ There are three ways to upload sequencing data to SP3.
 
 1. Upload sequencing data to `ENA <https://www.ebi.ac.uk/ena/submit>`_
 2. Upload sequencing data to a SP3 Storage dedicated to an organisation, such as a S3 bucket.
-3. Upload sequncing data to SP3 via SFTP link.
+3. Upload sequncing data to SP3 via a browser.
 
 The differences of three mechanisms of submission are as follows:
 
@@ -33,20 +48,6 @@ The differences of three mechanisms of submission are as follows:
 +----------------+---------------------------------------------------+-------------------------+---------------------------------+
 | SP3 submission | `Catsup <https://github.com/oxfordmmm/catsup>`_   |           Yes           | Available within organisation   |
 +----------------+---------------------------------------------------+-------------------------+---------------------------------+
-| FTP submission | SFTP client                                       |           No            |  Available to all SP3 users     |
+| File upload    | SP3 site                                          |           No            |  Available to all SP3 users     |
 +----------------+---------------------------------------------------+-------------------------+---------------------------------+
 
-Register an account
--------------------
-
-To register with SP3, please send an email to crookcs.it@ndm.ox.ac.uk with a subject as "**SP3 User Registration**" and provide following information: 
-
-* Your Email
-* Your Full Name
-* Your organisation
-* Your group (if you know)
-* Your research summary related to SP3
-* How often do you expect to use SP3?
-* How many samples do you expect to submit to SP3?
-* Which way would you submit your data to SP3? (see below choice)
-* Any other information you like us to know.
