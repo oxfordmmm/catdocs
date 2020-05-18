@@ -33,22 +33,41 @@ If your group has a cloud **storage**, say a S3 bucket, your sequencing data can
 SP3 can also get data from ENA via study number, project number or sample assession number.
 
 
-Data submission
----------------
-There are three ways to upload sequencing data to SP3. 
+Data fetching
+-------------
 
-1. Upload sequencing data to `ENA <https://www.ebi.ac.uk/ena/submit>`_
-2. Upload sequencing data to a SP3 Storage dedicated to an organisation, such as a S3 bucket.
-3. Upload sequncing data to SP3 via a browser.
+To run analysis in SP3, we first fetch data to SP3 from two sources: ENA or SP3 local.
 
-The differences of three mechanisms of submission are as follows:
+.. image:: _static/fetchdataset.png
+
+1. If you know assession number of ENA dataset, you can fetch ENA data to SP3.
+
+.. image:: _static/fetch_ena.png
+
+To use this source with your own data, you need to upload your data to ENA via `ENA <https://www.ebi.ac.uk/ena/submit>`_.
+
+2. From SP3 Local (where files are uploaded to SP3 via web upload or SP3 submission module, i.e. CatsUp)
+
+.. image:: _static/fetch_local.png
+
+
+Data uploading
+--------------
+
+To fetch files from SP3 local, files need to be uploaded before fetching, use one of following method:
 
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
 |                |            Tools                                  |    Meta-data required   |       Access Control                            |
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
-| ENA submission | `ENA <https://www.ebi.ac.uk/ena/submit>`_         |           Yes           |  Available to all SP3 users                     |
+| SP3 submission | `CatsUp <https://github.com/oxfordmmm/catsup>`_   |           Yes           |  Available within organisation                  |
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
-| SP3 submission | `Catsup <https://github.com/oxfordmmm/catsup>`_   |           Yes           |  Available within organisation                  |
+| Web upload     | SP3 site (see blow)                               |           No            |  Available only to the user who uploads data.   |
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
-| Web upload     | SP3 site                                          |           No            |  Available only to the user who uploads data.   |
-+----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
+
+To use web upload, go to "Datasets"
+
+.. image:: _static/dataset.png
+
+Then select "Upload Datasets"
+
+.. image:: _static/upload.png
