@@ -40,22 +40,28 @@ If the genomic data that the user wishes to analyze is hosted on the ENA, SP3 ca
 
 Sequence files can be transferred to the cloud server, then SP3 can fetch it from a folder. The users goes to the Dataset page, clickes New Fetch, choose LOCAL as source, and provide the folder of the data. The data is fetched from the local folder, which takes a few seconds to be ready for analysis.
 
-Start a pipeline
+Run a pipeline
 ----------------
 
 Once the dataset is fetched, the user can start a new analysis by going to the Datasets page, selecting a pipeline, and clicking Run on the dataset they wish to run the analysis on. This takes them to the New Run page where they select the settings specific to this analysis pipeline. Once they submit the run, they are taken to the pipeline status page where they can monitor the progress of the run.
 
-Monitor the Progress
+Monitor the progress
 --------------------
 
 .. image:: _static/monitor.png
 
 On the pipeline status screen, the user can click the details link to go to the run details link. This allows the user to view the nextflow log, to stop the run, view the progress per-sample and view the commands run and their output for each nextflow task. When the run is finished, the user can view the Nextflow report, the timeline, repeat the run or fetch the output as a new dataset. The details of the cluster compute can also the viewed on the Compute page, providing information on the nodes that are active, disk space status, what tasks are running on which nodes and an activity graph covering the past 24 hours.
 
-View the report
+View SP3 report
 ---------------
 
 If the pipeline has an associated report, it can be viewed at the run details page by clicking on the sample name.
 
 .. image:: _static/ERR025833.png
 
+Download the output files
+-------------------------
+
+All output files are avaialbe for download via a command or via web.
+
+.. image:: _static/output.png
