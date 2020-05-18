@@ -61,6 +61,13 @@ Catgrid is a configurationless, agentless grid scheduler with a web api. It mana
 
 CatGrid implements similar interface as Slurm cluster, such as sbatch, squeue and scancel.
 
+CatPile API
+-----------
+
+Catpile is a service that allows user to view sp3 metadata at dataset detail page as well as the report of the sample.
+
+When fetch occurs, the API is called to load the sp3 data. When a new run submits, the API links a fetch with a run.
+
 
 CatCloud
 --------

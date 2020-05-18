@@ -80,7 +80,8 @@ Audit Trail Data
 +----------------------+--------------------------+-----------+
 | /db/fetch-api.sqlite | fetch queues and datasets| fetch-api |
 +----------------------+--------------------------+-----------+
-
+| /db/catpile.sqlite   | sp3 metadata             | catpile   |
++----------------------+--------------------------+-----------+
 
 **SP3 Nextflow run audit trail example - one run**
 

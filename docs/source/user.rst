@@ -50,6 +50,5 @@ The differences of three mechanisms of submission are as follows:
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
 | SP3 submission | `Catsup <https://github.com/oxfordmmm/catsup>`_   |           Yes           |  Available within organisation                  |
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
-| File upload    | SP3 site                                          |           No            |  Available only to the user who uploaded data.  |
+| Web upload     | SP3 site                                          |           No            |  Available only to the user who uploads data.   |
 +----------------+---------------------------------------------------+-------------------------+-------------------------------------------------+
-
