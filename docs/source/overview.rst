@@ -22,7 +22,10 @@ User Journey
 Log in
 ------
 
-The user selects which SP3 cloud instance to use and logs in.
+User selects which SP3 cloud instance to use and logs in.
+
+About login and register, see :ref:`user-guide`.
+
 
 Fetch Data
 ----------
@@ -54,5 +57,5 @@ View the report
 
 If the pipeline has an associated report, it can be viewed at the run details page by clicking on the sample name.
 
-
+.. image:: _static/ERR025833.png
 
