@@ -1,3 +1,5 @@
+.. _data-type:
+
 Data Types
 ==========
 
@@ -147,50 +149,6 @@ Audit Trail Data
         "ftp.sra.ebi.ac.uk/vol1/fastq/SRR367/005/SRR3675245/SRR3675245_2.fastq.gz"]
     }
 
-Clockwork Output for Download
------------------------------
-
-.. code-block:: bash
-
-    /work/output/407f775a-04d9-4276-8220-4628ffbe0edb
-    8 directories, 26 files
-    Total size: 791M
-
-    └── ERR025833
-        ├── cortex
-        │   └── cortex.out
-        │       └── vcfs
-        │           └── cortex_wk_flow_I_RefCC_FINALcombined_BC_calls_at_all_k.raw.vcf
-        ├── minos
-        │   ├── final.vcf
-        │   ├── gvcf.fasta
-        │   ├── gvcf.samtools.vcf
-        │   └── gvcf.vcf.gz
-        ├── samtools
-        │   ├── rmdup.bam
-        │   └── samtools.vcf
-        ├── samtools_qc
-        │   ├── het_snps.het_calls.vcf
-        │   ├── het_snps.per_contig.tsv
-        │   ├── het_snps.summary.tsv
-        │   ├── samtools_qc.plot-acgt-cycles.png
-        │   ├── samtools_qc.plot-coverage.png
-        │   ├── samtools_qc.plot-gc-content.png
-        │   ├── samtools_qc.plot-gc-depth.png
-        │   ├── samtools_qc.plot-indel-cycles.png
-        │   ├── samtools_qc.plot-indel-dist.png
-        │   ├── samtools_qc.plot-insert-size.png
-        │   ├── samtools_qc.plot-mism-per-cycle.png
-        │   ├── samtools_qc.plot-quals-hm.png
-        │   ├── samtools_qc.plot-quals.png
-        │   ├── samtools_qc.plot-quals2.png
-        │   ├── samtools_qc.plot-quals3.png
-        │   └── samtools_qc.stats
-        └── speciation
-            ├── ERR025833_kraken2.tab
-            ├── mykrobe_output.json
-            └── reference_info.txt
-
 
 Clockwork Report
 ----------------
@@ -213,23 +171,4 @@ Clockwork Report
 | Resistance              | final.vcf               | reported        |
 +-------------------------+-------------------------+-----------------+
 
-Clockwork Output in Persisent Storage
--------------------------------------
-
-.. code-block:: bash
-
-    └── ERR025833
-        ├── cortex
-        │   └── cortex.out
-        │       └── vcfs
-        ├── minos
-        │   ├── final.vcf
-        │   └── gvcf.fasta
-        ├── samtools
-        ├── samtools_qc
-        │   └── samtools_qc.stats
-        └── speciation
-            ├── ERR025833_kraken2.tab
-            ├── mykrobe_output.json
-            └── reference_info.txt
 

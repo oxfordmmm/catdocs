@@ -33,6 +33,11 @@ If your group has a cloud **storage**, say a S3 bucket, your sequencing data can
 SP3 can also get data from ENA via study number, project number or sample assession number.
 
 
+You can find more about SP3 :ref:`data-type`.
+
+You can find more about SP3 :ref:`data-storage`.
+
+
 Data fetching
 -------------
 
@@ -44,7 +49,7 @@ To run analysis in SP3, we first fetch data to SP3 from two sources: ENA or SP3 
 
 .. image:: _static/fetch_ena.png
 
-To use this source with your own data, you need to upload your data to ENA via `ENA <https://www.ebi.ac.uk/ena/submit>`_.
+This is data available to public and uploaded to ENA via `ENA <https://www.ebi.ac.uk/ena/submit>`_.
 
 2. From SP3 Local (where files are uploaded to SP3 via web upload or SP3 submission module, i.e. CatsUp)
 
