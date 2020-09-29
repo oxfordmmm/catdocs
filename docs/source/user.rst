@@ -120,3 +120,6 @@ Download the output files
 All output files are avaialbe for download via a command or via web.
 
 .. image:: _static/output.png
+
+
+Explore more :ref:`sp3-features`.

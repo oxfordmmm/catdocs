@@ -1,3 +1,5 @@
+.. _sp3-features:
+
 SP3 Features
 ============
 
@@ -15,8 +17,8 @@ At the top of this run detail view, it shows:
 (The run name is generated for you (with pipeline name and timestamp), and you can edit it as well when starting a new run)
 
 
-Speciation highlighs
---------------------
+Speciation
+----------
 
 Looking at the run detail view, a table of samples and processes of samples are presented for you.
 
@@ -27,7 +29,7 @@ In this run, the species of the samples are **abscessus**, **xenopi**, **tubercu
 .. image:: _static/highlights.png
    :width: 240pt
    :align: left
-   :height: 240pt
+   :height: 270pt
 
 SP3 TB pipeline (clockwork combined) provides speciation information using **kraken2** and **mykrobe**. The highlighted speciation information is result of kraken2.
 
