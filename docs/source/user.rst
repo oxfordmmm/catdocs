@@ -5,20 +5,6 @@ User Guide
 
 Welcome to use Oxford SP3. Please take a moment to view this user guide and consider the options available to you before you start.
 
-Register an account
--------------------
-
-To register with SP3, please send an email to crookcs.it@ndm.ox.ac.uk with a subject as "**SP3 User Registration**" and provide following information: 
-
-* Your email
-* Your full name
-* Your organisation
-* Your group (if you know)
-* Your research summary related to SP3
-* How often do you expect to use SP3?
-* How many samples do you expect to submit to SP3?
-* Which way would you submit your data to SP3? (see below choice)
-* Any other information you like us to know.
 
 User, group and storage
 -----------------------
@@ -37,10 +23,16 @@ You can find more about SP3 :ref:`data-type`.
 
 You can find more about SP3 :ref:`data-storage`.
 
+Register an account
+-------------------
+
+To register with SP3, please click `Register <https://sp3ebi.mmmoxford.uk/register_sp3_user>`_. When your account is activated, you will receive an email.
+
+
 User Journey
 ------------
 
-Now you can start a user journey.
+With your SP3 account activated, you can start! A simple user journey is shown as follows.
 
 .. image:: _static/flow.png
 
@@ -117,7 +109,13 @@ If the pipeline has an associated report, it can be viewed at the run details pa
 Download the output files
 -------------------------
 
-All output files are avaialbe for download via a command or via web.
+All output files are avaialbe for download via a command or via web. 
+
+Click the **download link**, you will be able to explore the output files and download any of them.
+
+You can also use the **wget** command shown to get all output files for your run. 
+
+There is a filter option **(-A)** to help you only download a special type of files, see examples below. 
 
 .. image:: _static/output.png
 
