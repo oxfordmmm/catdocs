@@ -88,12 +88,10 @@ The data is fetched from the ENA in the background and the progress can be monit
 
 .. image:: _static/fetchENA3.png
 
-*Step 3:* Refresh the dataset page, your would see a *success* if all goes well. 
+*Step 4:* Refresh the dataset page, your would see a *success* if all goes well. 
 
 .. image:: _static/fetchENA4.png
 
-
-To know more about deposit data in ENA, uploaded to ENA via `ENA <https://www.ebi.ac.uk/ena/submit>`_.
 
 **From Other Source**
 
