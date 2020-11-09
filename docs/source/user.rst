@@ -16,7 +16,7 @@ A group can be a physical organisation or a virtual organisation. For example, O
 
 If your group has a cloud **storage**, say a S3 bucket, your sequencing data can be uploaded to that bucket and SP3 can get data from there if you allow us to do so. Only users from your organisation can see your sequencing data.
 
-SP3 can also get data from ENA via study number, project number or sample assession number.
+SP3 can also get data from ENA via study number, project number or sample accession number.
 
 
 You can find more about SP3 :ref:`data-type`.
@@ -45,24 +45,61 @@ Fetch Data
 ----------
 .. image:: _static/fetch.png
 
+There are three options for user to fetch data, two options for ENA, one option for local data storage. Local storage has data from web upload or S3 buckets via catsup module.
+
+.. image:: _static/fetch_0.png
+   :width: 400pt
+   :height: 150pt
+   :align: center
 
 **From ENA**
 
-If the genomic data that the user wishes to analyze is hosted on the ENA, SP3 can fetch it directly. The user goes to the Dataset page, clicks New Fetch, inputs the project accession and the samples to fetch and clicks New Fetch. The data is fetched from the ENA in the background and the progress can be monitored on the dataset page.
+If the genomic data is hosted at the ENA repo, SP3 can fetch it directly. Please go to Dataset page, click New Fetch.
+
+You can fetch one project, one accession or a list of accessions.
+    
+    Option 1. One project or one accession.
+    Option 2. A list of accessions from multiple project.
+
+Remember one fetch would make a dataset for one run. That means if you provdie a list of 200 samples, those 200 samples would be in one batch to run. We recommend maximum 500 samples/accessions for one run.
+
+1. Download all accessions from one project or one accession, you can fetch ENA data as following.
+
+.. image:: _static/fetch_ena.png
+   :width: 500pt
+   :align: left
+
+
+2. If you have a list of accessions, fetch as following.
+
+*Step 1:* Choose option - ENA - list of sample accessions
+
+.. image:: _static/fetchENA1.png
+   :width: 400pt
+   :height: 120pt
+   :align: center
+
+*Step 2:* Copy and paste a list of accession numbers, there is a "fetch name" generated for you and you can edit it to make it easier to identify.  
+
+.. image:: _static/fetchENA2.png
+
+*Step 3:* Your dataset would be added to the queue and have a coffee break, while waiting for the download.
+The data is fetched from the ENA in the background and the progress can be monitored on the dataset page.
+
+.. image:: _static/fetchENA3.png
+
+*Step 3:* Refresh the dataset page, your would see a *success* if all goes well. 
+
+.. image:: _static/fetchENA4.png
+
+
+To know more about deposit data in ENA, uploaded to ENA via `ENA <https://www.ebi.ac.uk/ena/submit>`_.
 
 **From Other Source**
 
 Sequence files can be transferred to the cloud server, then SP3 can fetch it from a folder. The users goes to the Dataset page, clickes New Fetch, choose LOCAL as source, and provide the folder of the data. The data is fetched from the local folder, which takes a few seconds to be ready for analysis.
 
-.. image:: _static/fetchdataset.png
-
-1. If you know assession number of ENA dataset, you can fetch ENA data to SP3.
-
-.. image:: _static/fetch_ena.png
-
-This is data available to public and uploaded to ENA via `ENA <https://www.ebi.ac.uk/ena/submit>`_.
-
-2. From SP3 Local (where files are uploaded to SP3 via web upload or SP3 submission module, i.e. CatsUp)
+1. From SP3 Local (where files are uploaded to SP3 via web upload or SP3 submission module, i.e. CatsUp)
 
 .. image:: _static/fetch_local.png
 
