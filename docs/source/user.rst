@@ -18,7 +18,6 @@ If your group has a cloud **storage**, say a S3 bucket, your sequencing data can
 
 SP3 can also get data from ENA via study number, project number or sample accession number.
 
-
 You can find more about SP3 :ref:`data-type`.
 
 You can find more about SP3 :ref:`data-storage`.
@@ -59,6 +58,7 @@ If the genomic data is hosted at the ENA repo, SP3 can fetch it directly. Please
 You can fetch one project, one accession or a list of accessions.
     
     Option 1. One project or one accession.
+
     Option 2. A list of accessions from multiple project.
 
 Remember one fetch would make a dataset for one run. That means if you provdie a list of 200 samples, those 200 samples would be in one batch to run. We recommend maximum 500 samples/accessions for one run.
