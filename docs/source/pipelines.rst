@@ -7,24 +7,15 @@ Overview
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
 | Pipeline                |     Species                            |       Features and Repo                           |      Author      |
 +=========================+========================================+===================================================+==================+
-| Oxford Catbug           |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |    Denis Volk    |
+| Clockwork combined      |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |   Denis & Fan    |
 |                         |                                        |    - Clockwork (for TB)                           |                  |
-|                         |                                        |    - Compass (for NTM)                            |                  |
 |                         |                                        |    - Drug Resistance on Clockwork VCF             |                  |
+|                         |                                        |    - TB Neighbourhood and Phylogeny Trees         |                  |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
 | Clockwork VC            |    TB                                  |    https://github.com/iqbal-lab-org/clockwork     |   Martin Hunt    |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Clockwork TB Only       |    TB                                  |    - Speciation (Kraken2 + Mykrobe)               |                  |
-|                         |                                        |    - Clockwork VC                                 |    Denis Volk    |
-|                         |                                        |    - Drug Resistance                              |                  |
-+-------------------------+----------------------------------------+---------------------------------------------------+------------------+
 | Oxford CompassCompact   |    TB + NTM                            |    https://github.com/oxfordmmm/CompassCompact    |    Yifei & Fan   |
 |                         |                                        |                                                   |                  |
-+-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| Oxford CompassPlus      |    TB + NTM                            |    - Speciation (Kraken2 + Mykrobe)               |    Denis & Fan   |
-|                         |                                        |    - CompassCompact                               |                  |
-+-------------------------+----------------------------------------+---------------------------------------------------+------------------+
-| PHE Flu                 |    Flu Virus                           |                                                   |    Ulf & Denis   |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
 | APHA BTB                |    Bovine TB                           |   https://github.com/oxfordmmm/BovTB-nf-docker    |  Richard & Fan   |
 +-------------------------+----------------------------------------+---------------------------------------------------+------------------+
@@ -97,7 +88,73 @@ The last column of the neightbour table is the SNP distance, to the query sample
 You can also query genetic neighbours ad-hoc in an interactive way, go to "clockwork" pipeline and click "View TB Neighbourhood"
 
 .. image:: _static/viewTB.png
+   :align: center   
+   :height: 80pt
 
 Follow the hint, use a run id and a sample name and set a SNP distance for the query.
 
-.. image:: _static/neighbour.png
+.. image:: _static/neighbour.png 
+        
+TB Phylogeny (alpha release)
+----------------------------
+
+For TB Neighbourhood, we build phylogeny trees for the nearest neighbourhood of TB samples.
+
+To create a tree for your sample and its neighbours: 
+
+**Step 1**. Query neighbours
+At SP3 sample report page, click 'Query genetic neighbourhood'.
+
+.. image:: _static/tree1.png
+        :align: center   
+        :height: 120pt
+
+**Step 2**. Select and generate
+
+Select the samples among the neighbours, and build the tree.
+
+You can adjust SNP distance, and select all or some of the neighbours to build trees.
+
+.. image:: _static/tree2.png
+
+**Step 3**. Confirm and name the tree
+
+Confirm your selection, and provide a name for your tree for later reference. Then click the button to generate the tree.
+
+.. image:: _static/tree3.png
+
+**Step 4**. Monitor the queue
+
+The tree buildling could be compute intensive and it could take a while. 
+
+After tree building job is submitted, you would be able to see your tree job is queued to compute.
+
+.. image:: _static/tree4.png
+
+You can refresh the page every so often, until it completes. It could be seconds, or minutes or hours depending on the amount of the nodes.
+
+.. image:: _static/tree5.png
+
+**Step 5**. View the tree
+
+When completed, the tree can be viewed in a page. (This uses phylocanvas, so javascript needs to be allowed in the browser.)
+
+.. image:: _static/tree6.png
+
+In this page, one or more nodes can be highlighted, given a search text in the node label.
+
+.. image:: _static/tree7.png
+
+You can use more features of Phylocanvas, by right click on the tree, such as:
+
+    - Export leave labels, newick file and tree image
+    - Show or hide labels
+    - Align/Realign labels
+
+.. image:: _static/tree7canvas.png
+
+You can also zoom or pan the image or click on node to highlight or clear the highlight.
+
+If you like to see trees built by other users, please click "Tree" at top menu. There are quite a lot already! 
+
+.. image:: _static/tree8.png
