@@ -23,3 +23,5 @@ make html
 ```bash
 firefox docs/build/html/index.html
 ```
+
+Catdocs is available [here](https://sp3docs.mmmoxford.uk/)
