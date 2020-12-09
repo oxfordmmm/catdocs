@@ -41,7 +41,7 @@ There are currently 10 available, with associated RefSeq chromosome IDs as follo
 
 Samtools QC
 -----------
-See `Samtool documentation <http://www.htslib.org/doc/samtools-stats.html>`_
+See `Samtools documentation <http://www.htslib.org/doc/samtools-stats.html>`_
 
 Resistance
 ----------
