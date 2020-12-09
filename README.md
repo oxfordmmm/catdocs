@@ -1,6 +1,4 @@
-[![Documentation Status](https://readthedocs.org/projects/catdocs/badge/?version=latest)](https://catdocs.readthedocs.io/en/latest/?badge=latest)
-
-# catdocs
+# Catdocs
 
 Documentation of Oxford SP3 (Scalable Pathogen Pipeline Platform) using Sphinx
 
