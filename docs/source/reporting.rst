@@ -20,7 +20,7 @@ The “Coverage” is the percent of the probe that has non-zero read depth. “
 
 See `mykrobe documentation <https://github.com/oxfordmmm/speciation>`_
 
-New lineage scheme: `A robust SNP barcode for typing Mycobacterium tuberculosis complex strains <https://www.nature.com/articles/ncomms5812>`_
+See `SNP panel for lineage classification <http://tgu.ibv.csic.es/?page_id=1794>`_
 
 Reference
 ---------
