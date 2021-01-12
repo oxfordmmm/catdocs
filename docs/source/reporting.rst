@@ -51,7 +51,7 @@ Proceed only if M. tuberculosus:
 * First a Genome object of the M. tuberculosis reference (NC_000962.3) is created/loaded (`reference`) using `gumpy`
 * It is then copied for the `sample`
 * The per-sample VCF produced by Clockwork is consumed and applied to the `sample` Genome object.
-* `gumpy` methods then produce lists of the genetic variants and mutations between `reference` and `sample`. (<https://github.com/oxfordmmm/gumpy>)
+* `gumpy <https://github.com/oxfordmmm/gumpy>` methods then produce lists of the genetic variants and mutations between `reference` and `sample`.
 * These are then parsed by the `piezo` package which in turn requires a resistance catalogue stored using a standard grammar (GARC, <https://github.com/oxfordmmm/piezo>). Some published catalogues are available here: <https://github.com/oxfordmmm/tuberculosis_amr_catalogues> (others will be added over time, including the Seq&Treat/WHO catalogue and any resulting from CRyPTIC).
 
 Resistance configuration
