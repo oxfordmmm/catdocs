@@ -4,14 +4,24 @@ Reporting
 Kraken2
 -------
 
+**Example of Kraken2 report**
+
+.. image:: _static/report_kraken.png
+
 Kraken2 is used to classify reads according to their most likely taxonomic clade.
 
 More: `speciation documentation <https://github.com/oxfordmmm/speciation>`_
 
 Kraken2 DB: `MiniKraken2_v2_8GB <https://ccb.jhu.edu/software/kraken2/downloads.shtml>`_ 
 
+See `how kraken output is parsed. <https://github.com/oxfordmmm/speciation>`_
+
 Mykrobe Speciation
 ------------------
+**Example of Mykrobe report**
+
+.. image:: _static/report_mykrobe.png
+
 Mykrobe is used to further classification if the sample appear to be mycobacterial, or a mixture containing M. tuberculosis reads.
 
 Mykrobe tests for the presence of probe sequences in the reads to determine the species present. 
@@ -22,8 +32,14 @@ See `mykrobe documentation <https://github.com/oxfordmmm/speciation>`_
 
 See `SNP panel for lineage classification <http://tgu.ibv.csic.es/?page_id=1794>`_
 
+See `how mykrobe output is parsed. <https://github.com/oxfordmmm/speciation>`_
+
 Reference
 ---------
+**Example of Reference report**
+
+.. image:: _static/report_reference.png
+
 Reference is selected based on mykrobe result. 
 
 There are currently 10 available, with associated RefSeq chromosome IDs as follows:
@@ -41,10 +57,17 @@ There are currently 10 available, with associated RefSeq chromosome IDs as follo
 
 Samtools QC
 -----------
+**Example of QC report**
+
+.. image:: _static/report_qc.png
+
 See `Samtools documentation <http://www.htslib.org/doc/samtools-stats.html>`_
 
 Resistance
 ----------
+**Example of drug resistance report**
+
+.. image:: _static/report_resistance.png
 
 Proceed only if M. tuberculosus:
 
@@ -67,4 +90,10 @@ Mutations
 ^^^^^^^^^
 `gumpy` produces two hierarchies of genetic variant. The lower-level description contains all insertions/deletions and all single nucleotide polymorphisms (SNP) -- we call these *genetic variants*. The higher-level description (which is typically used in resistance prediction) translates the latter into amino acids, if they lie within the coding region of a protein gene, otherwise there is no change. We describe these as *mutations*. Because more than SNP can occur in a codon, the latter tends to 
 
+Neighbours
+----------
+**Example of SNP distance report**
 
+.. image:: _static/report_distance.png
+
+SNP distance is calculated for a sample against other samples in the same run.
