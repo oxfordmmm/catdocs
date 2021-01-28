@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Oxford SP3'
-copyright = '2020, Oxford MMM'
+copyright = '2021, Oxford MMM'
 author = 'Oxford MMM'
 
 # The short X.Y version
