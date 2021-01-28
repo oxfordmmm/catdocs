@@ -13,7 +13,7 @@ CatWeb UI allows user to interact with SP3, for fetching data, analysing samples
 
 
 Cat Web APIs
-============
+------------
 
 CatFetch
 ^^^^^^^^
@@ -81,7 +81,7 @@ What output data need to be stored is configurable, for example, we storage cons
 
 
 Cloud Agnostic Operation
-========================
+------------------------
 
 CatCloud
 ^^^^^^^^
