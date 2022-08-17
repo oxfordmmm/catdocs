@@ -67,7 +67,7 @@ CatDap API
 ^^^^^^^^^^
 Catdap is a service that manages SP3 user authentication and authorisation. 
 
-It allows users register an account with SP3 and they only can access the data of their organisation.
+It allows users to register an account with SP3 and they only can access the data of their organisation.
 
 
 CatPersistence
@@ -75,7 +75,7 @@ CatPersistence
 
 CatPersistence provides a web view of data in SP3 persistence storage. 
 
-SP3 persistence storage stores data from different site for long-term storage. Curretnly, we store run information, pipeline output files and reports.
+SP3 persistence storage stores data from different site for long-term storage. Currently, we store run information, pipeline output files and reports.
 
 What output data need to be stored is configurable, for example, we storage consensus fasta files from clockwork TB pipeline. This enables users to query TB neighbourhood and build phylogeny trees.  
 
